@@ -41,7 +41,6 @@ class ExcelData {
 				} catch (NullPointerException ne) {
 					values.add("");
 				}
-				
 			}
 			map.put(row.getCell(i).getStringCellValue(), values);
 		}
