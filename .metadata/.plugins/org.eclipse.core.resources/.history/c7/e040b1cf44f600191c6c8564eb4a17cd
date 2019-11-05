@@ -1,0 +1,21 @@
+package com.hackerrank;
+
+public class TimeConversion {
+
+	static String timeConversion(String s) {
+
+		if(s.contains("AM")) {
+			s.replace("AM", "");
+		} else if(s.contains("PM")) {
+			
+		}
+		return s;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package ds;
+
+public class LinkedList {
+
+	
+	
+	Node head;
+	public void insert(int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = null;
+		
+		if (node!= null) {
+			Node n = head;
+		}
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		LinkedList ls = new LinkedList();
+		ls.insert(5);
+
+	}
+
+	
+}

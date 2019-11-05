@@ -1,0 +1,21 @@
+package org.udemy.exercise;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;import org.apache.xerces.impl.xpath.regex.Match;
+
+public class CheckMatch {
+
+	String text    ="geekforgeekforgeekababab";
+
+        String patternString = "(geek)(for)";
+
+        Pattern pattern = Pattern.compile(patternString);
+
+        Matcher matcher = pattern.matcher(text);
+        boolean matches = matcher.matches();
+        
+        public static void main(String[] args) {
+        	CheckMatch ch = new CheckMatch();
+			System.out.println(ch.matcher.groupCount());
+		}
+}

@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package selpack;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
+/**
+ * @author rakkumar
+ *
+ */
+public class FileFetch {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try{
+			   FileInputStream fstream = new FileInputStream("C:\\RK\\Workspace\\sel\\src\\abc.log");
+			   BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+			   String strLine;
+			   /* read log line by line */
+			   while ((strLine = br.readLine()) != null)   {
+			     /* parse strLine to obtain what you want */
+			  //   System.out.println (strLine);
+				   if (strLine.contains("Named Entity Recognition engine version")) {
+					   System.out.println(strLine.replaceAll(".*?(.?.?.?)?$", "$1"));
+					//   System.out.println(strLine.replaceAll("\\s|=|\"|[a-zA-Z]|<|>|\\[|\\]", ""));
+				   }
+			   }
+			   fstream.close();
+			} catch (Exception e) {
+			     System.err.println("Error: " + e.getMessage());
+			}
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package org.udemy.exercise;
+
+public class AlgebricOperation {
+
+	public static void main(String[] args) {
+//		int a = 5;
+//		float b = 2.5f;
+//		int result = (int) (a * a + b * b + 2 * a * b);
+//		System.out.println(result);
+		
+		int a=1;
+	    int b=6;
+	    System.out.println("Post-Increment a: " a/b);
+
+	}
+
+}

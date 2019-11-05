@@ -1,0 +1,29 @@
+package com.DataStructure;
+
+import java.util.Arrays;
+
+public class ShellSort {
+
+	public static void main(String[] args) {
+
+		int[] ar = { 45, 23, 67, -22, -37, 6 };
+
+		for (int gap = ar.length / 2; gap > 0; gap /= 2) {
+
+			for (int i = gap; i < ar.length; i++) {
+
+				int newelement = ar[gap];
+				int j = i;
+				while (j > 0 && j > ar[j - gap]) {
+					ar[j] = ar[j - gap];
+					j -= gap;
+				}
+
+			}
+		}
+
+		System.out.println(Arrays.toString(ar));
+
+	}
+
+}

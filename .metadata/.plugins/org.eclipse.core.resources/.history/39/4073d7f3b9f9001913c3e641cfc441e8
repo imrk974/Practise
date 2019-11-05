@@ -1,0 +1,23 @@
+package org.udemy.exercise.Generics;
+
+public class Compare <T extends FirstInput & Comparable<X>, X extends SecondInput & Comparable<T>> implements Comparable<X>{
+	
+	
+
+	public  int compareTo(X o) {
+		Compare<T, X> comp = new Compare<>();
+		return comp.compareTo(x);
+		
+	}
+
+	
+	
+	public static void main(String[] args) {
+		FirstInput f = new FirstInput(5, 7);
+		SecondInput s = new SecondInput(9, 4);
+		
+		Compare<f, s> comp = new Compare<>();
+		
+	}
+
+}

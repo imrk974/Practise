@@ -1,0 +1,52 @@
+package org.udemy.exercise;
+
+public class AlgebricOperation {
+
+	/*
+	 * static void staircase(int n) { for (int i=1; i <=n; i++) { for (int j=1;
+	 * j<=n; j++){ if ((i+j)>=n+1) { System.out.print("#"); } else {
+	 * System.out.print(" "); }
+	 * 
+	 * } if (i<n) { System.out.println(); } } }
+	 */
+
+	public static String minMaxSum(Integer[] arr) {
+		Integer[] sortedArray = new Integer[arr.length];
+		
+		for (int i = 0; i < arr.length; i++) {
+			for (int j=0; j < arr.length; j++) {
+				if (arr[i] < arr[j]) {
+					Integer temp = arr[j];
+					arr[j] = arr[i];
+					arr[i] = temp;
+				}
+			}
+		}
+		Integer minSum=0, maxSum=0;
+		for(int i=0; i <arr.length-1; i++) {
+			minSum=minSum +arr[i];
+		}
+		for(int i=1; i <arr.length; i++) {
+			maxSum=maxSum +arr[i];
+		}
+		
+		return minSum+ " " +maxSum;
+	}
+
+	public static void main(String[] args) {
+		// int a = 5;
+		// float b = 2.5f;
+		// int result = (int) (a * a + b * b + 2 * a * b);
+		// System.out.println(result);
+
+		// double a=0;
+		// double b=6;
+		// double res= a/b;
+		// System.out.println("Post-Increment a: " + res);
+		// staircase(6);
+		Integer[] arr = {5,-5,-5,5,5};
+		System.out.println(minMaxSum(arr));
+
+	}
+
+}

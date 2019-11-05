@@ -1,0 +1,26 @@
+package com.DataStructure;
+
+public class BubbleSort {
+
+	public void swap(int[] a, int i, int j) {
+		if(i==j) {
+			return;
+		}
+		int temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
+	}
+	
+	
+	public static void main(String[] args) {
+		int[] arr = {45,2,7,-2,-15,8};
+		
+		for (int unsortedArr = arr.length-1; unsortedArr > 0; unsortedArr--) {
+			
+			
+			
+		}
+
+	}
+
+}

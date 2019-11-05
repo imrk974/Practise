@@ -1,0 +1,67 @@
+package ds;
+
+public class LinkedList {
+
+	
+	
+	Node head;
+	public void insert(int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = null;
+		
+		if (head == null) {
+			head = node;
+		} else if (head!=null) {
+			Node n = head;
+			while (n.next!=null) {
+				n = n.next;
+			}
+			n.next = node;			
+		} 
+		
+	}
+	
+	public void insertAtStart(int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = head;
+		head = node;
+		
+	}
+	
+	public void insertAt(int index, int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = null;
+		
+		if (index == 0) {
+			node.next = head;
+			head =node;
+		} 
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		LinkedList ls = new LinkedList();
+		ls.insert(5);
+		ls.insert(7);
+		ls.insert(71);
+		ls.insert(17);
+		ls.insertAtStart(99);
+		ls.insertAtStart(56);
+		ls.showLinkedList();
+	}
+
+	public void showLinkedList() {
+		Node printNode = head;
+		do {
+			System.out.println(printNode.data);
+			printNode = printNode.next;
+		} while (printNode.next!=null);
+		System.out.println(printNode.data);
+	}
+	
+}

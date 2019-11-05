@@ -1,0 +1,49 @@
+package org.udemy.exercise;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+class Names implements Comparable<Names> {
+	private String name;
+
+	public Names(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public int compareTo(Names o) {
+		if (name.length() == o.name.length()) {
+			return 0;
+		} else if (name.length() < o.name.length()) {
+			return -1;
+		} else {
+			return 1;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return name;
+	}
+
+}
+
+public class CompareCollection {
+
+	public static void main(String[] args) {
+		List<Names> ls = new ArrayList<>();
+		ls.add(new Names("Rakesh"));
+		ls.add(new Names("Takesh"));
+		ls.add(new Names("Aakesh"));
+		ls.add(new Names("Bakesh"));
+		ls.add(new Names("Yakesh"));
+		ls.add(new Names("Uakesh"));
+		ls.add(new Names("Cakesh"));
+		
+		System.out.println(ls);
+		Collections.sort(ls);
+		System.out.println(ls);
+		
+	}
+}

@@ -1,0 +1,30 @@
+package org.udemy.exercise.Generics;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+class ExcelData {
+	
+	void readExcel(String filePath) {
+		File file = new File("C:\\RK\\\report\\");
+		FileInputStream fi = new FileInputStream(file);
+		XSSFWorkbook wb = new XSSFWorkbook();
+		
+	}
+	
+	
+	
+	
+	
+}
+
+public class CompareExcelSheets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

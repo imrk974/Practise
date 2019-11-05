@@ -1,0 +1,22 @@
+package org.udemy.exercise;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;import org.apache.xerces.impl.xpath.regex.Match;
+
+public class CheckMatch {
+
+	String text    ="This is the text to be searched male Male malE" +
+            "for occurrences of the http:// pattern.";
+
+        String patternString = "(^[mM][aA][lL][eE]$)";
+
+        Pattern pattern = Pattern.compile(patternString);
+
+        Matcher matcher = pattern.matcher(text);
+        boolean matches = matcher.matches();
+        
+        public static void main(String[] args) {
+        	CheckMatch ch = new CheckMatch();
+			System.out.println(ch.matches);
+		}
+}

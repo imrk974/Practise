@@ -1,0 +1,48 @@
+package intTest;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Amazon {
+
+	
+	static String word = "Amazon_w_e_b_services are___widely__used_acc__ro___ss_the_worl_d";
+	
+	static StringBuffer sb = new StringBuffer();
+	public static void recreateWord() {
+		String[] ar = word.split(" ");
+		
+		for (int i = 0; i < ar.length; i++) {
+			String temp = ar[i].replaceAll("_","");
+			sb.append(temp + " ");
+		}
+	}
+	
+	public static void main(String[] args) {
+		recreateWord();
+		System.out.println(sb);
+	}
+	
+	public void  test() {
+		List<Integer> a = new ArrayList<>();
+		a.add(1);
+		a.get(1);
+		BigInteger b = BigInteger.ONE;
+		for (int i=0; i<a.size(); i++) {
+			b.add(a.get(i));
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

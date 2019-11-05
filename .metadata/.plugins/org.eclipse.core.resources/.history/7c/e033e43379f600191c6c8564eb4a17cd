@@ -1,0 +1,18 @@
+package com.DataStructure;
+
+import java.util.Arrays;
+
+public class ShellSort {
+
+	public static void main(String[] args) {
+		
+		int[] ar = { 45, 23, 67, -22, -37, 6 };
+
+		
+
+		System.out.println(Arrays.toString(ar));
+	}
+
+	}
+
+}

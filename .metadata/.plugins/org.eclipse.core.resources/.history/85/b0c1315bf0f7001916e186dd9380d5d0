@@ -1,0 +1,27 @@
+package org.udemy.exercise;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class names {
+	private String name;
+	
+}
+
+public class CompareCollection {
+
+	public static void main(String[] args) {
+		List<String> ls = new ArrayList<String>();
+		ls.add("Rakesh");
+		ls.add("Makesh");
+		ls.add("Takesh");
+		ls.add("Aakesh");
+		ls.add("Bakesh");
+		ls.add("Cakesh");
+		ls.add("Sakesh");
+		ls.sort(null);
+		System.out.println(ls);
+		
+
+	}
+}

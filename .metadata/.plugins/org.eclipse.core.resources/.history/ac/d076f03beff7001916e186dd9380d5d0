@@ -1,0 +1,49 @@
+package org.udemy.exercise;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class employee {
+
+	private String empName;
+	private int empID;
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	public int getEmpID() {
+		return empID;
+	}
+
+	public void setEmpID(int empID) {
+		this.empID = empID;
+	}
+
+	public String getEmpLocation() {
+		return empLocation;
+	}
+
+	public void setEmpLocation(String empLocation) {
+		this.empLocation = empLocation;
+	}
+
+	private String empLocation;
+
+}
+
+public class CompareObjects {
+	
+	public static void main(String[] args) {
+		employee e = new employee();
+		
+		List<employee> list = new ArrayList<employee>();
+		list.add(e)
+
+	}
+
+}

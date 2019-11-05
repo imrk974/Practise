@@ -1,0 +1,49 @@
+package org.udemy.exercise;
+
+import org.apache.xerces.impl.dv.xs.IntegerDV;
+
+class Data<K extends Integer, V extends GenericsTest> {
+
+	private int d1;
+	private String d2;
+
+	private float d3;
+
+	public Data(int d1, String d2) {
+		this.d1 = d1;
+		this.d2 = d2;
+	}
+
+	public int getD1() {
+		return d1;
+	}
+
+	public String getD2() {
+		return d2;
+	}
+
+	public float getD3() {
+		return d3;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [d1=" + d1 + ", d2=" + d2 + ", d3=" + d3 + "]";
+	}
+
+	public <E extends Integer, N extends GenericsTest> void display(E element, N number) {
+
+	}
+
+}
+
+public class GenericsTest {
+
+	public static void main(String[] args) {
+		Data<Integer, GenericsTest> d = new Data<Integer, GenericsTest>(1, new GenericsTest());
+
+		System.out.println(d.getD1());
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package org.udemy.exercise;
+
+public class CollectionsSorting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

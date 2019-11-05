@@ -1,0 +1,23 @@
+ package com.DataStructure;
+
+public class SelectSort {
+
+	public static void main(String[] args) {
+		
+		int[] ar = {45, 23, 67, -22, -37, 6};
+		
+		for (int lastunsortedIndex = ar.length -1; lastunsortedIndex > 0; lastunsortedIndex --) {
+			
+			int largest = 0;
+			for (int i = 1; i < ar.length-1; i++) {
+				
+				if(ar[i] > largest ) {
+					largest = i;
+				}
+				
+			}
+		}
+
+	}
+
+}

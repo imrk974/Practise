@@ -1,0 +1,17 @@
+package com.hackerrank;
+
+public class TimeConversion {
+
+	static String timeConversion(String s) {
+        /*
+         * Write your code here.
+         */
+
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

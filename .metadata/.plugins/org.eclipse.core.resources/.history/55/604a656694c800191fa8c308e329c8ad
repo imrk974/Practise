@@ -1,0 +1,38 @@
+package ds;
+
+public class Stack {
+
+	int[] stack = new int[5];
+	int top = 0;
+	
+	public void push(int data) {
+		stack[top] = data;
+		top++;		
+	}
+	
+	public void peek() {
+		
+	}
+	
+	public void pop() {
+		stack[top] = 0;
+		
+	}
+	
+	public void show() {
+		
+		for (int i :stack) {
+			System.out.println(i + " ");
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		Stack st = new Stack();
+		st.push(21);
+		st.push(23);
+		st.push(25);
+		
+	}
+
+}

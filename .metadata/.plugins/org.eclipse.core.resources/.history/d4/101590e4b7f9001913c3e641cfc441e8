@@ -1,0 +1,20 @@
+package org.udemy.exercise.Generics;
+
+public class Compare <T extends FirstInput, X extends SecondInput> implements Comparable<T>{
+	
+	FirstInput f = new FirstInput(5, 7);
+	SecondInput s = new SecondInput(9, 4);
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	@Override
+	public int compareTo(T o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

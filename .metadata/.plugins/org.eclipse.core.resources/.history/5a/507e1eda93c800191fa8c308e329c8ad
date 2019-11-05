@@ -1,0 +1,13 @@
+package ds;
+
+public class Stack {
+
+	public static void main(String[] args) {
+		
+		int[] stack = new int[5];
+		
+		
+
+	}
+
+}

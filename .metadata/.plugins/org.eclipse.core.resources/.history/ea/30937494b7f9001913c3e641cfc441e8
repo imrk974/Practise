@@ -1,0 +1,25 @@
+package org.udemy.exercise.Generics;
+
+public class FirstInput {
+	
+	private int a;
+	private int b;
+	
+	
+	public FirstInput(int a, int b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+	
+	
+	public int getA() {
+		return a;
+	}
+	public int getB() {
+		return b;
+	}
+	
+	
+
+}

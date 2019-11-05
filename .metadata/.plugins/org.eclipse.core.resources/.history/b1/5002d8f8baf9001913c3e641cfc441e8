@@ -1,0 +1,34 @@
+package org.udemy.exercise.Generics;
+
+class feedIn<T extends FirstInput, X> implements Comparable<X>{
+	private T var1;
+	private X var2;
+	
+	public T getVar1() {
+		return var1;
+	}
+
+	public X getVar2() {
+		return var2;
+	}
+
+	@Override
+	public int compareTo(X o) {
+		var1.compareTo(o)
+	}
+
+	
+}
+
+public class Compare{
+	
+	
+
+	public static void main(String[] args) {
+		FirstInput f = new FirstInput(5, 7);
+		SecondInput s = new SecondInput(9, 4);
+
+
+	}
+
+}

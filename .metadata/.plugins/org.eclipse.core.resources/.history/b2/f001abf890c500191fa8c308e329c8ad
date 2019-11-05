@@ -1,0 +1,22 @@
+package ds;
+
+public class LinkedList {
+
+	
+	public void insert(int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = null;
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		LinkedList ls = new LinkedList();
+		
+
+	}
+
+	
+}

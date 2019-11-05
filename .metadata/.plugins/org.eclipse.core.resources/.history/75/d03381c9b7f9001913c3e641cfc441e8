@@ -1,0 +1,12 @@
+package org.udemy.exercise.Generics;
+
+public class Compare <T extends FirstInput, X extends SecondInput> implements Comparable<T>{
+	
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

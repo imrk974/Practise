@@ -1,0 +1,15 @@
+package org.udemy.exercise;
+
+class employee {
+	
+	
+}
+
+public class CompareObjects {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

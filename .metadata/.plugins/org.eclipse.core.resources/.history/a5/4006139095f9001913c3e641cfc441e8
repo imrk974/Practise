@@ -1,0 +1,21 @@
+package org.udemy.exercise;
+
+
+class Data<T> {
+	
+	private int d1;
+	private String d2;
+	private float d3;
+	
+}
+
+
+
+public class GenericsTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

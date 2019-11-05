@@ -1,0 +1,24 @@
+package org.udemy.exercise.Generics;
+
+import java.io.File;
+
+class ExcelData {
+	
+	void readExcel(String filePath) {
+		
+	}
+	
+	
+	File file = new File("C:\\RK\\\report\\");
+	
+	
+}
+
+public class CompareExcelSheets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

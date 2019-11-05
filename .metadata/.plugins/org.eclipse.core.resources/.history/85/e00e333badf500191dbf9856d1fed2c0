@@ -1,0 +1,35 @@
+package com.DataStructure;
+
+import java.util.Arrays;
+
+public class BubbleSort {
+
+	public static void swap(int[] a, int i, int j) {
+		if(i==j) {
+			return;
+		}
+		int temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
+	}
+	
+	
+	public static void main(String[] args) {
+		int[] arr = {45,2,7,-2,-15,8};
+		
+		for (int unsortedArr = arr.length-1; unsortedArr > 0; unsortedArr--) {
+			for (int i=0; i < arr.length; i++) {
+				if(arr[i] > arr[unsortedArr]) {
+					swap(arr, i, unsortedArr);
+					System.out.println(Arrays.toString(arr));
+				}
+			}
+			
+		}
+
+		for (int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+}

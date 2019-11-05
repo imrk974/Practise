@@ -1,0 +1,38 @@
+package com.hackerrank;
+
+import java.util.Arrays;
+
+public class BirthdayCandles {
+
+	static int birthdayCakeCandles(int[] ar) {
+        for (int i=ar.length-1; i > 0; i--) {
+            for (int j=0; j < i; j++) {
+                
+                if(ar[j] >ar[i]) {
+                    int temp = ar[j];
+                    ar[j] = ar[i];
+                    ar[i] = temp;
+                } 
+            }
+        }
+        System.out.println(Arrays.toString(ar));
+        int count = 1;
+        int largest = ar[ar.length-1];
+        for(int i=ar.length-2; i >0; i++) {
+            if (ar[i]==largest) {
+                count = count + 1;
+            } else {
+            	break;
+            }
+            
+        }
+        return count;
+    }
+	
+	public static void main(String[] args) {
+		int[] ar = {82, 49, 82, 82, 41, 82, 15, 63, 38, 25};
+		System.out.println(birthdayCakeCandles(ar));
+
+	}
+
+}

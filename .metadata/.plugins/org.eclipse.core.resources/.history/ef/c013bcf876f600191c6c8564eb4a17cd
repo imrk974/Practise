@@ -1,0 +1,20 @@
+package com.DataStructure;
+
+import java.util.Arrays;
+
+public class InsertionSort {
+
+	public static void main(String[] args) {
+
+		int[] ar = { 45, 23, 67, -22, -37, 6 };
+
+		for (int firstunsortedIndex = 1; firstunsortedIndex < ar.length; firstunsortedIndex++) {
+			int sortedIndex = firstunsortedIndex-1;
+			for (int i = ; i < f; i++) {
+
+			}
+		}
+
+		System.out.println(Arrays.toString(ar));
+	}
+}

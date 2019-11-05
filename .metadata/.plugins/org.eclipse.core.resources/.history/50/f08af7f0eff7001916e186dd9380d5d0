@@ -1,0 +1,14 @@
+package org.udemy.exercise;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CompareCollection {
+
+	public static void main(String[] args) {
+		List<String> ls = new ArrayList<String>();
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.hackerrank;
+
+public class Drive {
+
+	static int timeTakenBwStations(int totalStation) {
+		
+		for (int i=0; i < totalStation; i++) {
+			
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

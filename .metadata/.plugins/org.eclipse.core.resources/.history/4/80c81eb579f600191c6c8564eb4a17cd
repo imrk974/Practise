@@ -1,0 +1,26 @@
+package com.DataStructure;
+
+import java.util.Arrays;
+
+public class ShellSort {
+
+	public static void main(String[] args) {
+		
+		int[] ar = { 45, 23, 67, -22, -37, 6 };
+
+		for (int unsortedIndex=1; unsortedIndex<ar.length; unsortedIndex++) {
+			
+			int  newelment = ar[unsortedIndex];
+			int i;
+			for (i = unsortedIndex; i > 0; i--) {
+				ar[i] = ar[-1];
+			}
+			ar[i] = newelment;
+		}
+		
+
+		System.out.println(Arrays.toString(ar));
+
+	}
+
+}

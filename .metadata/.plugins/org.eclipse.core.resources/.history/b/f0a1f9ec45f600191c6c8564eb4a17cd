@@ -1,0 +1,24 @@
+package com.hackerrank;
+
+public class TimeConversion {
+
+	static String timeConversion(String s) {
+		String finalFormat= null;
+		if(s.contains("AM")) {
+			finalFormat = s.replace("AM", "");
+		} else if(s.contains("PM")) {
+			String temp = s.replace("PM", "");
+			String[] sArr = temp.split(":");
+			int hourin24 = Integer.parseInt(sArr[0]) + 12;
+			finalFormat = hourin24 + ":" + sArr[1] + ":" + sArr[2];
+		}
+		return finalFormat;
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println(timeConversion("12:45:54PM"));
+
+	}
+
+}
