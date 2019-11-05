@@ -8586,3 +8586,15 @@ Java Model Exception: Java Model Status [module-info [in module-info.class [in <
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-10-29 20:26:12.161
 !MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-11-05 14:26:18.168
+!MESSAGE jre:jre:ctor:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-11-05 14:26:24.563
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-11-05 14:26:36.419
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-11-05 16:27:12.274
+!MESSAGE jre:jre:ovrm:zip:1.0.0 could not be resolved from the model repositories. Are you offline?

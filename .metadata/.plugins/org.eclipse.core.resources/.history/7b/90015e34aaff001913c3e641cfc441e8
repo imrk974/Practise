@@ -1,0 +1,34 @@
+package org.udemy.exercise;
+
+import java.util.Scanner;
+
+public class PrimeNumberCheck {
+
+	static Scanner sc = new Scanner(System.in);
+	
+	public static String checkPrime(int number) {
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		System.out.println(s);
+		boolean bool = true;
+		for(int i = 2; i < number; i++) {
+			if (number%i==0) {
+				bool = false;
+			}
+		}
+		
+		if (!bool) {
+			return number + " Number is not prime.";
+		} else {
+			return number + " Number is prime";
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Enter the number : \n");
+		int number = sc.nextInt();
+		System.out.println(checkPrime(number));
+	}
+}
