@@ -1,10 +1,10 @@
 package com.hackerrank;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class PlusMinus {
 
-	// Complete the plusMinus function below.
 	static void plusMinus(int[] arr) {
 		int zeroCount = 0, posCount = 0, negCount = 0;
 		for (int i = 0; i < arr.length; i++) {
@@ -16,13 +16,14 @@ public class PlusMinus {
 				negCount = negCount + 1;
 			}
 		}
-		double zeroPercent = zeroCount/arr.length;
-		double posPercent = posCount/arr.length;
-		double negPercent = negCount / arr.length;
+		DecimalFormat df = new DecimalFormat("#.##");
+		double zeroPercent = ((double)zeroCount/arr.length)*100;
+		double posPercent = ((double)posCount/arr.length)*100;
+		double negPercent = ((double)negCount / arr.length)*100;
 
-		System.out.println(posPercent);
-		System.out.println(negPercent);
-		System.out.println(zeroPercent);
+		System.out.println("Positive Number percent : " +df.format(posPercent));
+		System.out.println("Negative Number Percent : " +df.format(negPercent));
+		System.out.println("Zero Percent : " +df.format(zeroPercent));
 
 	}
 
