@@ -1,0 +1,42 @@
+{ "priceDetails" : [
+	{
+		"paperName": "TOI",
+		"Param": {
+			"weekdaysRate": 3,
+			"Saturdayrate": 5,
+			"SundayRate": 6
+		}
+	},
+	{
+		"paperName": "Hindu",
+		"Param": {
+			"weekdaysRate": 2.5,
+			"Saturdayrate": 4,
+			"SundayRate": 4
+		}
+	},
+	{
+		"paperName": "ET",
+		"Param": {
+			"weekdaysRate": 2,
+			"Saturdayrate": 2,
+			"SundayRate": 10
+		}
+	},
+	{
+		"paperName": "BM",
+		"Param": {
+			"weekdaysRate": 1.5,
+			"Saturdayrate": 1.5,
+			"SundayRate": 1.5
+		}
+	},
+	{
+		"paperName": "HT",
+		"Param": {
+			"weekdaysRate": 2,
+			"Saturdayrate": 4,
+			"SundayRate": 4
+		}
+	}
+] }
